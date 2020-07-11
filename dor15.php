@@ -1,11 +1,20 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function15.php";
-echo color("nevy"," ===================================\n");
-echo color("blue"," Auto create Gojek & Redeem voucher	\n");
-echo color("green","      Ramz Tutorial Channel\n");
-echo color("blue"," Time    : ".date('[d-m-Y] [H:i:s]')."	\n");
-echo color("nevy"," ===================================\n");
+echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
+echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
+echo "\e[96m           JADI GUNAKANLAH DENGAN BIJAK                 \n";
+echo "\e[96m          SCRIB INI TIDAK DI JUAL BELIKAN               \n";
+echo "\e[96m              SUBCRIBE CHANNEL YOUTUTBE :               \n";
+echo "\e[96m                    RAMZ TUTORIAL                       \n";
+echo "\e[96m       BIAR BISA MAKIN SEMANGAT BIKIN KONTENNYA         \n";
+echo "\e[96m ********\e[95m".date('[d-m-Y] [H:i:s]')."\e[96m********\n";
+echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[93m            \e[96m BERDOA DULU SEBELUM CLAIM \e[93m \n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo color("white","Token: ");
 $token = trim(fgets(STDIN));
 echo "\n".color("white","Claim?: y/n ");
