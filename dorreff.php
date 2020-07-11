@@ -3,10 +3,10 @@ date_default_timezone_set('Asia/Jakarta');
 include "functionreff.php";
 echo color("white","Token: ");
 $token = trim(fgets(STDIN));
-echo "\n".color("white","Claim?: y/n ");
+echo "\n".color("red","Claim?: y/n ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
-        echo color("white","▬▬▬▬▬▬▬▬▬▬▬▬VOUCHER REFFERAL▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬VOUCHER REFFERAL▬▬▬▬▬▬▬▬▬▬▬▬");
         $data = '{"referral_code":"G-ZDJYTYX"}';    
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
