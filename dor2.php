@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function1.php";
+include "function2.php";
 ulang:
 // function change(){
 echo color("nevy"," ===================================\n");
