@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function.php";
+include "function1.php";
 echo color("red"," ===================================\n");
 echo color("green"," Auto create Gojek & Redeem voucher	\n");
 echo color("red","          Ramz Tutorial\n");
