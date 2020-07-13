@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function3.php";
+include "function1.php";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
 echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
@@ -25,7 +25,7 @@ echo "\n".color("white","Claim?: y/n ");
         echo "\n".color("white","Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
-        sleep(1);
+        sleep(5);
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -33,7 +33,7 @@ echo "\n".color("white","Claim?: y/n ");
         echo "\n".color("green"," Message: ".$message);
         }else{
         echo "\n".color("white"," Message: ".$message);
-        sleep(1);
+        sleep(6);
         }
         echo "\n".color("white","Claim B..");
         echo "\n".color("white","Please wait");
