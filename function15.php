@@ -1,7 +1,5 @@
 <?php
-
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
-
 $header[] = "Host: api.gojekapi.com";
 $header[] = "User-Agent: okhttp/3.12.1";
 $header[] = "Accept: application/json";
@@ -63,7 +61,7 @@ function nama()
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
     $ex = curl_exec($ch);
     // $rand = json_decode($rnd_get, true);
-    preg_match_all('~(&bull; (.*?)<br/>&bull; )~', $ex, $name);
+    preg_match_all('~(• (.*?)<br/>• )~', $ex, $name);
     return $name[2][mt_rand(0, 14) ];
     }
 function getStr($a,$b,$c){
