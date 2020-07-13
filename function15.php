@@ -1,5 +1,7 @@
 <?php
+
 function request($url, $token = null, $data = null, $pin = null, $otpsetpin = null, $uuid = null){
+
 $header[] = "Host: api.gojekapi.com";
 $header[] = "User-Agent: okhttp/3.12.1";
 $header[] = "Accept: application/json";
@@ -9,7 +11,7 @@ $header[] = "X-AppVersion: 3.50.1";
 $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
-$header[] = "X-Location: -8.1735593,113.7014891";
+$header[] = "X-Location: -7.585418,110.832258";
 $header[] = "X-Location-Accuracy: 3.0";
 if ($pin):
 $header[] = "pin: $pin";
@@ -61,7 +63,7 @@ function nama()
     curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
     $ex = curl_exec($ch);
     // $rand = json_decode($rnd_get, true);
-    preg_match_all('~(• (.*?)<br/>• )~', $ex, $name);
+    preg_match_all('~(&bull; (.*?)<br/>&bull; )~', $ex, $name);
     return $name[2][mt_rand(0, 14) ];
     }
 function getStr($a,$b,$c){
