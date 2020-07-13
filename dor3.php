@@ -7,7 +7,11 @@ echo color("red","| Redeem voucher |\n");
 echo color("red","| Creator : Ramz Tutorial    |\n");
 echo "| Time    :".date('[d-m-Y] [H:i:s]')."   |\n";
 echo " ===========================\n";
-
+echo color("white","Token: ");
+$token = trim(fgets(STDIN));
+echo "\n".color("white","Claim?: y/n ");
+        $pilihan = trim(fgets(STDIN));
+        if($pilihan == "y" || $pilihan == "Y"){
         echo color("red","\n===========(REDEEM VOUCHER)===========");
         echo "\n".color("yellow","!] Claim voc GOFOODSANTUY19");
         echo "\n".color("yellow","!] Please wait");
