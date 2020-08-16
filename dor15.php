@@ -172,3 +172,4 @@ $token = trim(fgets(STDIN));
          echo color("white","-] GAGAL!!!\n");
          }
 }
+}
