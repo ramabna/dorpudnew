@@ -28,21 +28,7 @@ $token = trim(fgets(STDIN));
         echo "\n".color("green","ðŸ‘ðŸ™ Message: ".$message);
         goto gocar;
         }else{
-        echo "\n".color("red","â˜ ï¸â˜ ï¸  Message: ".$message);
-	    gocar:
-		echo "\n".color("green","ðŸ‘ŒðŸ± Ambil Voucer Lagi");
-        echo "\n".color("nevy","Intip Dulu  ");
-        for($a=1;$a<=3;$a++){
-        echo color("red","ðŸ‘€ ");
-        sleep(1);
-        }
-        $code1 = requested('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":""}');
-        $message = fetch_value1($code1,'"message":"','"');
-        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("green","ðŸ‘ðŸ™ Message: ".$message);
-        }else{
-        echo "\n".color("red","-] Message: ".$message);
-        sleep(3);
+        sleep(5)
         $cekvoucher = requested('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
         $voucher1 = getStr1('"title":"','",',$cekvoucher,"1");
@@ -74,7 +60,7 @@ echo color("yellow","=====!=======!!========!!!=====!!!======\n");
         }
 
 date_default_timezone_set('Asia/Jakarta');
-include "function15.php";
+include "funct3.php";
 echo colorss("yellow","Masukkan Token: ");
 $token = trim(fgets(STDIN));
         echo colorss("yellow","\nÂ¤â–¬â–¬â–¬â–¬â–¬Ï€Ï€â–¬â–¬â–¬â–¬â–¬â–¬ GAS MANG â–¬â–¬â–¬â–¬â–¬Ï€Ï€â–¬â–¬â–¬â–¬â–¬â–¬Â¤");
@@ -169,5 +155,6 @@ $token = trim(fgets(STDIN));
          die();
          }else{
          echo color("white","-] GAGAL!!!\n");
+        
          }
- }
+}
