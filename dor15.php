@@ -14,7 +14,9 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[93m            \e[96m BERDOA DULU SEBELUM CLAIM \e[93m \n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo color("yellow","Masukkan Token: ");
+date_default_timezone_set('Asia/Jakarta');
+include "function1.php";
+echo colorss("yellow","Masukkan Token: ");
 $token = trim(fgets(STDIN));
         echo "\n".color("green","ðŸ‘ŒðŸ± Ambil Voucer Go-Food 20k ");
         echo "\n".color("nevy","Intip Dulu ");
@@ -60,7 +62,7 @@ echo color("yellow","=====!=======!!========!!!=====!!!======\n");
         }
 
 date_default_timezone_set('Asia/Jakarta');
-include "funct3.php";
+include "function1.php";
 echo colorss("yellow","Masukkan Token: ");
 $token = trim(fgets(STDIN));
         echo colorss("yellow","\nÂ¤â–¬â–¬â–¬â–¬â–¬Ï€Ï€â–¬â–¬â–¬â–¬â–¬â–¬ GAS MANG â–¬â–¬â–¬â–¬â–¬Ï€Ï€â–¬â–¬â–¬â–¬â–¬â–¬Â¤");
