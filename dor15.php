@@ -188,3 +188,4 @@ $token = trim(fgets(STDIN));
          }else{
          echo color("white","-] GAGAL!!!\n");
          }
+}
