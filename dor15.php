@@ -15,23 +15,6 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[93m            \e[96m BERDOA DULU SEBELUM CLAIM \e[93m \n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-echo color("white","Token: ");
-$token = trim(fgets(STDIN));
-echo "\n".color("white","Claim?: y/n ");
-        $pilihan = trim(fgets(STDIN));
-        if($pilihan == "y" || $pilihan == "Y"){
-echo color("yellow","=====!=======!!========!!!=====!!!======\n");
-         
-         echo "\n".color("nevy"," Sedang Proses  ");
-        for($a=1;$a<=3;$a++)
-{
-        echo color("red","ðŸ’žðŸ’ž  \n");
-        sleep(1);
-        }
-date_default_timezone_set('Asia/Jakarta');
-include_once ('function1.php');
-echo color("purple","                 CLAIM VOUCHER GOJEK                      \n");
-echo color("blue","Copy Paste Token Yang Didapat Sebelumnya Di Atas   \n");
 echo color("yellow","Masukkan Token: ");
 $token = trim(fgets(STDIN));
         echo "\n".color("green","ðŸ‘ŒðŸ± Ambil Voucer Go-Food 20k ");
