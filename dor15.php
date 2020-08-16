@@ -1,6 +1,5 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
-include "function15.php";
 echo "\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[96m_________________   WARNING !!!!!!!!  _________________ \n";
 echo "\e[96m          INI SCRIB GOJEK INI GRATIS BRO                \n";
@@ -171,5 +170,4 @@ $token = trim(fgets(STDIN));
          }else{
          echo color("white","-] GAGAL!!!\n");
          }
-}
-}
+ }
